@@ -21,4 +21,4 @@ os: kernel.elf
 	$(AS) $(ASFLAGS) $< -o $@
 
 clean:
-	-@rm *.o *.elf *.iso iso/boot/kernel.elf ../SerialPort.txt 2>/dev/null || true
+	-@rm *.o *.elf *.iso iso/boot/kernel.elf ../SerialPort*.txt 2>/dev/null || true

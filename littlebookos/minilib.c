@@ -218,8 +218,4 @@ void printf(int stream, int label, const char *format, ...)
             }
         }
     }
-    if ((stream == SCREEN_STREAM) | (stream == BOTH_STREAM))
-    {
-        sw_write("\n");
-    }
 }

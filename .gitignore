@@ -1,4 +1,5 @@
-/SerialPort.txt
+/SerialPort1.txt
+/SerialPort2.txt
 *.o
 *.elf
 *.iso

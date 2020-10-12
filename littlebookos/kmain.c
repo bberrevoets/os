@@ -13,7 +13,10 @@ void kmain(struct multiboot *mboot_ptr)
     if (mboot_ptr->mods_count > 0)
         printf(BOTH_STREAM, INFO_PRINT, "%d modules geladen.\n", mboot_ptr->mods_count);
 
-    printf(SCREEN_STREAM, NONE_PRINT, "Hello, world!\n");
+    printf(BOTH_STREAM, NONE_PRINT, "Hello, world!\n");
+    printf(BOTH_STREAM, NONE_PRINT, "Hello, world!\n");
+    printf(BOTH_STREAM, NONE_PRINT, "Hello, world!\n");
+    printf(BOTH_STREAM, NONE_PRINT, "Hello, world!\n");
 
     for (;;)
         ;
