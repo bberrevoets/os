@@ -22,7 +22,7 @@ void sw_init(void)
 {
     outb(PORT + 1, 0x00); // Disable all interrupts
     outb(PORT + 3, 0x80); // Enable DLAB (set baud rate divisor)
-    outb(PORT + 0, 0x02); // Set divisor to 2 (lo byte) 57600 baud
+    outb(PORT + 0, 0x01); // Set divisor to 1 (lo byte) 115200 baud
     outb(PORT + 1, 0x00); //                  (hi byte)
     outb(PORT + 3, 0x03); // 8 bits, no parity, one stop bit
     outb(PORT + 2, 0xC7); // Enable FIFO, clear them, with 14-byte threshold

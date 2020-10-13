@@ -95,6 +95,7 @@ void printf(int stream, int label, const char *format, ...)
         {
             fb_set_color(FB_LIGHT_BLUE, bg);
             fb_write("[DEBUG] ");
+            fb_set_color(old_fg, bg);
         }
         else if (stream == SERIAL_STREAM)
         {
@@ -104,6 +105,7 @@ void printf(int stream, int label, const char *format, ...)
         {
             fb_set_color(FB_LIGHT_BLUE, bg);
             fb_write("[DEBUG] ");
+            fb_set_color(old_fg, bg);
             sw_write("[DEBUG] ");
         }
 
@@ -113,6 +115,7 @@ void printf(int stream, int label, const char *format, ...)
         {
             fb_set_color(FB_LIGHT_GREEN, bg);
             fb_write("[INFO] ");
+            fb_set_color(old_fg, bg);
         }
         else if (stream == SERIAL_STREAM)
         {
@@ -122,6 +125,7 @@ void printf(int stream, int label, const char *format, ...)
         {
             fb_set_color(FB_LIGHT_BLUE, bg);
             fb_write("[INFO] ");
+            fb_set_color(old_fg, bg);
             sw_write("[INFO] ");
         }
         break;
@@ -130,6 +134,7 @@ void printf(int stream, int label, const char *format, ...)
         {
             fb_set_color(FB_RED, bg);
             fb_write("[ERROR] ");
+            fb_set_color(old_fg, bg);
         }
         else if (stream == SERIAL_STREAM)
         {
@@ -139,17 +144,13 @@ void printf(int stream, int label, const char *format, ...)
         {
             fb_set_color(FB_LIGHT_BLUE, bg);
             fb_write("[ERROR] ");
+            fb_set_color(old_fg, bg);
             sw_write("[ERROR] ");
         }
         break;
 
     default:
         break;
-    }
-
-    if ((stream == SCREEN_STREAM) | (stream == BOTH_STREAM))
-    {
-        fb_set_color(old_fg, bg);
     }
 
     char **arg = (char **)&format;
