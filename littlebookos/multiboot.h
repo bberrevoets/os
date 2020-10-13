@@ -1,8 +1,7 @@
 // multiboot.h -- Declares the multiboot info structure.
-//                Made for JamesM's tutorials <www.jamesmolloy.co.uk>
 
-#ifndef MULTIBOOT_H
-#define MULTIBOOT_H
+#ifndef INCLUDE_MULTIBOOT_H
+#define INCLUDE_MULTIBOOT_H
 
 #define MULTIBOOT_FLAG_MEM 0x001
 #define MULTIBOOT_FLAG_DEVICE 0x002

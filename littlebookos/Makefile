@@ -1,6 +1,6 @@
-OBJECTS = loader.o framebuffer.o serialwriter.o io.o minilib.o interrupt.o descriptor_tables.o isr.o gdt.o kmain.o 
+OBJECTS = loader.o framebuffer.o serialwriter.o io.o minilib.o interrupt.o descriptor_tables.o isr.o gdt.o timer.o keyboard.o kmain.o 
 CC = i686-elf-gcc
-CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -c
+CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector -nostartfiles -nodefaultlibs -Wall -Werror -c
 LDFLAGS = -T link.ld -melf_i386
 AS = nasm
 ASFLAGS = -felf32
