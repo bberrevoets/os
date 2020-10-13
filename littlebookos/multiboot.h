@@ -41,6 +41,7 @@ struct multiboot
     unsigned int vbe_interface_seg;
     unsigned int vbe_interface_off;
     unsigned int vbe_interface_len;
+
 } __attribute__((packed));
 
 typedef struct multiboot_header multiboot_header_t;

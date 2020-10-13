@@ -6,4 +6,4 @@ timeout=0
 
 title os
 kernel /boot/kernel.elf
-# module=/boot/grub/additional_modules
+module /modules/program
