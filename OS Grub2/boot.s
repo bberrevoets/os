@@ -37,7 +37,9 @@ start:
 
     call kmain
 
-    push halt_message
+    push halt_message   ; message
+    push 2              ; label (INFO_PRINT)
+    push 2              ; stream (BOTH_STREAM)
     call printf
 
 loop:
@@ -45,4 +47,4 @@ loop:
     jmp loop
 
 halt_message:
-    db "Halted.", 0
+    db "Halted.", 10, 0

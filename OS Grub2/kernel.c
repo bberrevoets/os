@@ -15,7 +15,7 @@ void kmain(unsigned long magic, unsigned long addr)
     }
     else
     {
-        printf(BOTH_STREAM, INFO_PRINT, "Booted by compliant loader!\n");
+        printf(BOTH_STREAM, NONE_PRINT, "Booted by compliant loader!\n");
     }
 
     if (addr & 7)

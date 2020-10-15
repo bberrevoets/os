@@ -123,7 +123,7 @@ void printf(int stream, int label, const char *format, ...)
         }
         else if (stream == BOTH_STREAM)
         {
-            fb_set_color(FB_LIGHT_BLUE, bg);
+            fb_set_color(FB_LIGHT_GREEN, bg);
             fb_write("[INFO] ");
             fb_set_color(old_fg, bg);
             sw_write("[INFO] ");
@@ -142,7 +142,7 @@ void printf(int stream, int label, const char *format, ...)
         }
         else if (stream == BOTH_STREAM)
         {
-            fb_set_color(FB_LIGHT_BLUE, bg);
+            fb_set_color(FB_RED, bg);
             fb_write("[ERROR] ");
             fb_set_color(old_fg, bg);
             sw_write("[ERROR] ");
@@ -200,7 +200,7 @@ void printf(int stream, int label, const char *format, ...)
                         fb_put(*p++);
                     else
                     {
-                        sw_put(*p++);
+                        sw_put(*p);
                         fb_put(*p++);
                     }
                 break;
@@ -212,7 +212,7 @@ void printf(int stream, int label, const char *format, ...)
                     fb_put(*((int *)arg++));
                 else
                 {
-                    sw_put(*((int *)arg++));
+                    sw_put(*((int *)arg));
                     fb_put(*((int *)arg++));
                 }
                 break;
