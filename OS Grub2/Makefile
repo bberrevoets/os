@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: B.N. Berrevoets <bert@berrevoets.net>      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/10/17 00:34:03 by B.N. Berrev       #+#    #+#              #
+#    Updated: 2020/10/17 00:34:04 by B.N. Berrev      ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 OBJECTS = boot.o framebuffer.o serialwriter.o io.o minilib.o kernel.o 
 CC = i686-elf-gcc
 CFLAGS = -m32 -nostdlib -nostdinc -I./ -fno-builtin -fno-stack-protector -nostartfiles -nodefaultlibs -Wall -Werror -c

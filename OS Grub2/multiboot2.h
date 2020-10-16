@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   multiboot2.h                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: B.N. Berrevoets <bert@berrevoets.net>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/17 00:34:19 by B.N. Berrev       #+#    #+#             */
+/*   Updated: 2020/10/17 00:34:19 by B.N. Berrev      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef MULTIBOOT_HEADER
 #define MULTIBOOT_HEADER 1
 /* How many bytes from the start of the file we search for the header. */
