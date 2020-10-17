@@ -3,3 +3,7 @@
 *.o
 *.elf
 *.iso
+OS Grub2/SerialPort1.txt
+
+out/
+BabySteps/boot.bin
