@@ -5,7 +5,7 @@ if [ "$#" -ne 1 ]; then
   exit 1
 fi
 
-sudo apt install gnu-efi grub-common xorriso g++ nasm libgmp3-dev libmpfr-dev libisl-dev libmpc-dev texinfo -y
+sudo apt install gnu-efi grub-common xorriso g++ nasm libgmp3-dev libmpfr-dev libisl-dev libmpc-dev texinfo qemu-system-x86-xen -y
 
 cd "$(dirname "$0")"
 
