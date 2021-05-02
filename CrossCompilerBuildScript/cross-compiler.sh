@@ -1,11 +1,12 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-  echo "Supply one parameter: the target to use!!"
-  exit 1
+  export TARGET=i686-elf
+else
+  export TARGET=$1
 fi
 
-sudo apt install gnu-efi grub-common xorriso g++ nasm libgmp3-dev libmpfr-dev libisl-dev libmpc-dev texinfo qemu-system-x86-xen -y
+sudo apt install gnu-efi grub-common xorriso g++ make nasm libgmp3-dev libmpfr-dev libisl-dev libmpc-dev texinfo qemu-system-x86-xen -y
 
 cd "$(dirname "$0")"
 
@@ -24,7 +25,6 @@ echo "Unpacking gcc..."
 tar -xf gcc-9.2.0.tar.xz
 
 export PREFIX="$HOME/opt/cross"
-export TARGET=$1
 export PATH="$PREFIX/bin:$PATH"
 
 mkdir build-binutils
