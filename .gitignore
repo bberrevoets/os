@@ -7,3 +7,5 @@ OS Grub2/SerialPort1.txt
 
 out/
 BabySteps/boot.bin
+*.so
+*.efi
